@@ -1,0 +1,6 @@
+[submodule "themes/hextra"]
+	path = themes/hextra
+	url = https://github.com/imfing/hextra
+[submodule "themes/paper"]
+	path = themes/paper
+	url = https://github.com/nanxiaobei/hugo-paper
