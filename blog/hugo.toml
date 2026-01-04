@@ -2,3 +2,56 @@ baseURL = 'https://prasenjeet.dev'
 languageCode = 'en-us'
 title = "Prasenjeet Rathore"
 theme = "hextra"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "blogs"
+    name = "Blogs"
+    pageRef = "/posts"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 2
+  [[menu.main]]
+    name = "Search"
+    weight = 3
+    params = { type = "search" }
+  [[menu.main]]
+    name = "GitHub"
+    weight = 4
+    url = "https://github.com/prasenjeeth"
+    params = { icon = "github" }
+  [[menu.main]]
+    name = "LinkedIn"
+    weight = 5
+    url = "https://linkedin.com/in/prasenjeetrathore"
+    params = { icon = "linkedin" }
+  [[menu.main]]
+    name = "Twitter"
+    weight = 6
+    url = "https://twitter.com/prasenjeeth"
+    params = { icon = "twitter" }
+  [[menu.main]]
+    name = "Medium"
+    weight = 7
+    url = "https://medium.com/@prasenjeeth"
+    params = { icon = "medium"}
+
+
+[params]
+  [params.theme]
+    default = "system"
+    displayToggle = true
+  [params.search]
+    enable = true
+    type = "flexsearch"
+  [params.navbar]
+    displayTitle = true
+    displayLogo = true
+    logo = { path = "images/logo.svg", dark = "images/logo-dark.svg" }
