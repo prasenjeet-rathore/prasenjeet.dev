@@ -1,4 +1,4 @@
-Site live at : [prasenjeet.dev](https://wwww.prasenjeet.dev) 
+Site live at : [prasenjeet.dev](https://www.prasenjeet.dev) 
 
 Welcome to the source code for my personal blog and portfolio. 
 
