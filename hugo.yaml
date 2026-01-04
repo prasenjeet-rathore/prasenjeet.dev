@@ -16,8 +16,8 @@ menu:
       name: Blog
       pageRef: /blog
       weight: 1
-    - name: Today I Learned (TIL)
-      pageRef: /blog/til
+    - name: Posts
+      pageRef: /blog/posts
       parent: blog
       weight: 1
     - name: Project Diary
