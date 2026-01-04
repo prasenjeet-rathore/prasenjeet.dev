@@ -1,7 +1,3 @@
-
-[submodule "blog/themes/paper"]
-	path = blog/themes/paper
-	url = https://github.com/nanxiaobei/hugo-paper
-[submodule "blog/themes/hextra"]
-	path = blog/themes/hextra
+[submodule "themes/hextra"]
+	path = themes/hextra
 	url = https://github.com/imfing/hextra

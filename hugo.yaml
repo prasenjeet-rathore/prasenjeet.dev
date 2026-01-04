@@ -1,0 +1,63 @@
+baseURL: https://prasenjeet.dev/
+languageCode: en-us
+title: "Prasenjeet's Blog"
+theme: hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      pageRef: /blog
+      weight: 1
+    - name: Today I Learned (TIL)
+      pageRef: /blog/til
+      parent: blog
+      weight: 1
+    - name: Project Diary
+      pageRef: /blog/project-diary
+      parent: blog
+      weight: 2
+    - name: About
+      pageRef: /about
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      url: https://github.com/prasenjeet-rathore
+      weight: 5
+      params:
+        icon: github
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/prasenjeet-rathore/
+      weight: 6
+      params:
+        icon: linkedin
+    - name: Theme
+      weight: 7
+      params:
+        type: theme-toggle
+        label: true
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    displayPoweredBy: true
+
+  editURL:
+    enable: false
+
+  theme:
+    default: light   # or: dark
+    displayToggle: false

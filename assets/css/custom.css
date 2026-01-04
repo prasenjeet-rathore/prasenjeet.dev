@@ -1,0 +1,63 @@
+/* Tweak theme toggle in the top navbar */
+.hextra-nav-container .hextra-theme-toggle {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.hextra-nav-container .hextra-theme-toggle span {
+  font-size: 0.75rem;
+}
+
+.hextra-nav-container .hextra-theme-toggle:hover {
+  background-color: #f1f1f1;
+  color: #111;
+}
+
+html.dark .hextra-nav-container .hextra-theme-toggle:hover {
+  background-color: #2d2d2d;
+  color: #f7f7f7;
+}
+
+/* Match dropdown text size with the toggle */
+.hextra-nav-container .hextra-theme-toggle-options p {
+  font-size: 0.75rem;
+}
+
+/* Post cards: minimal link styling */
+.post-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.post-card-link h3,
+.post-card-link p {
+  text-decoration: none;
+}
+.post-card-link:hover h3 {
+  color: var(--primary-500, #2563eb);
+}
+
+/* Navbar icon spacing and size */
+.hextra-nav-container nav {
+  gap: 0.35rem;
+}
+.hextra-nav-container a[title="GitHub"],
+.hextra-nav-container a[title="LinkedIn"] {
+  padding: 0.15rem;
+}
+.hextra-nav-container a[title="GitHub"] svg,
+.hextra-nav-container a[title="LinkedIn"] svg {
+  height: 16px;
+  width: 16px;
+}
+
+/* Latest posts: smaller, clean typography */
+.post-card-link p {
+  font-size: 0.75rem;
+}
+.post-card-link h3 {
+  font-size: 0.95rem;
+  line-height: 1.2;
+}

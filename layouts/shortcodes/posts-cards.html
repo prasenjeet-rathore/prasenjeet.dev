@@ -1,0 +1,30 @@
+{{- $limit := .Get "limit" | default 4 -}}
+{{- $section := .Get "section" | default "blog" -}}
+{{- $pages := first $limit (where site.RegularPages "Section" $section) -}}
+
+{{- if not (gt (len $pages) 0) -}}
+  <p class="hx:text-sm hx:text-gray-500 hx:dark:text-neutral-400">No posts yet. Check back soon.</p>
+{{- else -}}
+  <div class="hx:grid hx:gap-4 hx:grid-cols-1 md:hx:grid-cols-2">
+    {{- range $pages -}}
+      {{- $img := .Params.image -}}
+      {{- /* Prefer page resource named in Params.image if exists */ -}}
+      {{- with .Resources.GetMatch $img }}{{ $img = .RelPermalink }}{{ end -}}
+      <div class="hx:block hx:overflow-hidden hx:rounded-xl hx:border hx:border-gray-200 hx:bg-white hx:shadow-sm hx:transition hover:hx:-translate-y-0.5 hover:hx:shadow-md hx:dark:border-neutral-800 hx:dark:bg-neutral-900">
+        {{- if $img -}}
+          <div class="hx:h-40 hx:w-full hx:overflow-hidden hx:bg-gray-100 hx:dark:bg-neutral-800">
+            <img src="{{ $img }}" alt="{{ .Title }}" class="hx:h-full hx:w-full hx:object-cover" loading="lazy" />
+          </div>
+        {{- else -}}
+          <div class="hx:h-1 hx:w-full hx:bg-gradient-to-r hx:from-primary-500/80 hx:via-primary-400/60 hx:to-primary-600/80"></div>
+        {{- end -}}
+        <div class="hx:p-4 hx:flex hx:flex-col hx:gap-2">
+          <a href="{{ .RelPermalink }}" class="post-card-link">
+            <p class="hx:text-xs hx:text-gray-500 hx:dark:text-neutral-400">{{ .Date.Format "Jan 2, 2006" }}</p>
+            <h3 class="hx:text-lg hx:font-semibold hx:text-gray-900 hx:dark:text-gray-50">{{ .Title }}</h3>
+          </a>
+        </div>
+      </div>
+    {{- end -}}
+  </div>
+{{- end -}}
