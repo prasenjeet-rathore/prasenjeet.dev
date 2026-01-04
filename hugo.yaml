@@ -20,8 +20,8 @@ menu:
       pageRef: /blog/posts
       parent: blog
       weight: 1
-    - name: Project Diary
-      pageRef: /blog/project-diary
+    - name: Projects
+      pageRef: /blog/projects
       parent: blog
       weight: 2
     - name: About
