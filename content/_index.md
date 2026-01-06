@@ -10,11 +10,7 @@ layout = "home"
   </p>
 </div>
 
-{{< cards >}}
-  {{< card link="/about" title="About Me" icon="user" description="Quick intro and what I’m working on." >}}
-  {{< card link="/blog/posts" title="Blog" icon="bookmark" description="Notes on what I'm learning." >}}
-  {{< card link="/blog/projects" title="Projects" icon="collection" description="Archiving projects progress." >}}
-{{< /cards >}}
+
 
 <div class="hx:mx-auto hx:max-w-5xl hx:px-6 hx:pt-10 hx:pb-12">
   <div class="hx:flex hx:items-center hx:justify-between hx:mb-4">
