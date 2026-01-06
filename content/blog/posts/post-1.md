@@ -1,7 +1,7 @@
 +++
 date = '2026-01-06T18:45:35+01:00'
 draft = false
-title = 'Free blog using Hugo and Github Pages'
+title = 'Minimal blogging using Hugo'
 +++
 
 I wanted to start a personal blog, but I had a specific set of non-negotiables. My website needed to be:
