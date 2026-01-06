@@ -1,10 +1,20 @@
 +++
 date = '2026-01-06T18:45:35+01:00'
-draft = true
+draft = false
 title = 'Free blog using Hugo and Github Pages'
 +++
 
-I wanted to create my own website for blogging without paying any monthly subscription for any services. Also want it to be minimal where I can just focus on writing using Markdown once the setup is done. Also i wanted the website to have fast loading time. All these things are very well taken care by Hugo and Github Pages. If you also would like to have a similar blog setup then this tutorial will be helpful hopefully.
+I wanted to start a personal blog, but I had a specific set of non-negotiables. My website needed to be:
+
+- 100% Free: No monthly subscriptions (except domain name purchase).
+
+- Minimalist: I just want to write in Markdown.
+
+- Blazing Fast: Instant loading times were a must.
+
+I achieved all of this using Hugo and GitHub Pages. You can see the result live at [prasenjeet.dev](https://www.prasenjeet.dev).
+
+If you want a similar setup that costs nothing and requires zero maintenance, follow the tutorial below.
 
 ### Step 1: Install Hugo
 Begin by installing Hugo on your system. If you're using Fedora, you can easily install it using the terminal:
@@ -21,7 +31,8 @@ hugo new site blog -f yml
 This will generate a basic Hugo site structure with default directories.
 
 ### Step 3: Choose a Theme
-Next, download a theme for your blog. In this tutorial, we'll use the "paper" theme but you can use any other themes, personally I like hextra, but paper theme is more easy to setup for this tutorial:
+Next, download a theme for your blog. In this tutorial, we'll use the "paper" theme but you can use any other themes, personally I like [hextra](https://imfing.github.io/hextra/), but paper theme is more easy to setup for this tutorial:
+
 ```bash
 git submodule add https://github.com/nanxiaobei/hugo-paper themes/paper
 ```
