@@ -63,7 +63,7 @@ Navigate to the settings of your GitHub repository and access the "Pages" tab. C
 Before making any further changes locally, synchronize your local repository with the remote one by running `git pull`.
 
 ### Step 8: Update Configuration
-Update the `baseURL` in the `config.yml` file to reflect your GitHub Pages URL. Here's an example of the `config.yml` file contents:
+Update the `baseURL` in the `config.yml` file to reflect your GitHub Pages URL, you can also add custom domain here. Here's an example of the `config.yml` file contents:
 ```yaml
 baseURL: "<enter your link from GitHub Pages section in the settings>"
 languageCode: en-us
