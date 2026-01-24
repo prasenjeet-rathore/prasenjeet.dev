@@ -6,7 +6,7 @@ title = '2-Minute Setup for Introduction to Statistical Learning With Python'
 
 If you are like me, you probably waste too much time setting up a "perfect" environment before actually learning. Developers call this "yak-shaving" which means solving trivial problems before getting to the primary objective. This blog is to save you from trap of yak-shaving if you are starting your machine learning journey with [ISLP with Python book](https://www.statlearning.com/).
 
-[Yak Shaving](content/images/Yak-Shaving.png)
+![Yak Shaving](/images/Yak-Shaving.png)
 
 To get started you only need two things on your system:
 1. Docker Desktop 
@@ -37,7 +37,7 @@ docker-compose up
 
 Once the terminal stops scrolling, head to your browser and type: 👉 localhost:8888
 You should see something like this as shown in image below
-![Jupyter Lab](content/images/jupyterlab.png)
+![Jupyter Lab](/images/jupyterlab.png)
 
 When you create a new python notebook in the above screen you'll see a folder called workspace is created on your computer. Always save your notebooks here! This folder is 'mapped' to your actual computer, so even if you delete the Docker container, your hard work stays safe on your hard drive."
 
