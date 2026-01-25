@@ -44,11 +44,13 @@ html.dark .hextra-nav-container .hextra-theme-toggle:hover {
   gap: 0.35rem;
 }
 .hextra-nav-container a[title="GitHub"],
-.hextra-nav-container a[title="LinkedIn"] {
+.hextra-nav-container a[title="LinkedIn"],
+.hextra-nav-container a[title="Medium"] {
   padding: 0.15rem;
 }
 .hextra-nav-container a[title="GitHub"] svg,
-.hextra-nav-container a[title="LinkedIn"] svg {
+.hextra-nav-container a[title="LinkedIn"] svg,
+.hextra-nav-container a[title="Medium"] svg {
   height: 16px;
   width: 16px;
 }

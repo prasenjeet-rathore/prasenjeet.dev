@@ -41,8 +41,13 @@ menu:
       weight: 6
       params:
         icon: linkedin
-    - name: Theme
+    - name: Medium
+      url: https://medium.com/@prasenjeet.rathore
       weight: 7
+      params:
+        icon: medium
+    - name: Theme
+      weight: 8
       params:
         type: theme-toggle
         label: true
